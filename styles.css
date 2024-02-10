@@ -1,0 +1,308 @@
+/* NOTES ON CSS
+. in CSS is a "class" selector; begin items with "." when you mean to reference them as a class
+# in CSS is an "id" selector; begin items with "#" when you mean to reference them as an id
+@ in CSS are "at-rules" that tell CSS how to behave: https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule
+*/
+
+/* set background style */
+.webpage {
+  background-color: #000
+}
+
+.podcast {
+  color: #f2f2f2;
+  font-family: helvetica, sans-serif;
+}
+
+.link_format {
+  color: hotpink;
+}
+
+.paragraph {
+  color: #f2f2f2;
+  font-size: 18px;
+  font-family: helvetica, sans-serif;
+}
+
+.interviewee {
+  font-family: helvetica, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: helvetica, sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  font-family: helvetica, sans-serif;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #b4b4b4;
+  color: white;
+  font-family: helvetica, sans-serif;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav a.icon {
+  display: list-item;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*to define the banner image container*/
+.image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/*to define the banner image container image*/
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* margin-left: -300px;
+  margin-top: -700px;
+  margin-bottom: -1000px; */
+}
+
+/*format text overlay for the HOMEPAGE BANNER*/
+.overlay-text-title-home {
+  position: absolute;
+  top: 3%; 
+  left: 50%; 
+  background-color: transparent; 
+  color: #fff; 
+  padding: 10px 20px; 
+  /*using vw ('viewport-width') will adjust for different screensizes*/
+  font-size: 12vw; 
+  font-family: helvetica, sans-serif;
+  text-align: center;
+}
+
+/*format text overlay for the ABOUTPAGE BANNER*/
+.overlay-text-title-about {
+  position: absolute;
+  top: 70%; 
+  left: 5%; 
+  background-color: transparent; 
+  color: #fff; 
+  padding: 10px 20px; 
+  /*using vw ('viewport-width') will adjust for different screensizes*/
+  font-size: 5vw; 
+  font-family: helvetica, sans-serif;
+  text-align: center;
+}
+
+/*format text overlay for the SUPPORT BANNER*/
+.overlay-text-title-support {
+  position: absolute;
+  top: 70%; 
+  left: 10%; 
+  background-color: transparent; 
+  color: #fff; 
+  padding: 10px 20px; 
+  /*using vw ('viewport-width') will adjust for different screensizes*/
+  font-size: 5vw; 
+  font-family: helvetica, sans-serif;
+  text-align: center;
+}
+
+/*format text overlay for the PODCAST BANNER*/
+.overlay-text-title-podcast {
+  position: absolute;
+  top: 70%; 
+  left: 5%; 
+  background-color: transparent; 
+  color: #fff; 
+  padding: 10px 20px; 
+  /*using vw ('viewport-width') will adjust for different screensizes*/
+  font-size: 4vw; 
+  font-family: helvetica, sans-serif;
+  text-align: center;
+}
+
+/*format text overlay for the SUPPORT BANNER*/
+.overlay-text-title-contact {
+  position: absolute;
+  top: 70%; 
+  left: 10%; 
+  background-color: transparent; 
+  color: #fff; 
+  padding: 10px 20px; 
+  /*using vw ('viewport-width') will adjust for different screensizes*/
+  font-size: 5vw; 
+  font-family: helvetica, sans-serif;
+  text-align: center;
+}
+
+.image-icon {
+  height: 40px;
+  width: fit-content;
+}
+
+/*ICONS TABLE formatting*/
+.icons_table {
+  color: #f2f2f2;
+  font-size: 18px;
+  font-family: helvetica, sans-serif;
+  margin-left: 70%;
+  margin-right: auto;
+  justify-content: center;
+}
+
+/*ALBUM TABLE formatting*/
+.album_info {
+  color: #f2f2f2;
+  font-size: 18px;
+  font-family: helvetica, sans-serif;
+  justify-content: left;  
+  width: auto;
+}
+
+/*PODCAST TABLE formatting*/
+.podcast_info {
+  color: #f2f2f2;
+  font-size: 18px;
+  font-family: helvetica, sans-serif;
+  justify-content: right;  
+  width: 100%;
+}
+
+.podcast_iframe_col {
+  flex : 0 0 auto;
+  width : 75%; 
+}
+
+.podcast_transcript_col {
+  flex : 0 0 auto;
+  width : 25%; 
+}
+
+.header_row {
+  color: #f2f2f2;
+  font-size: 18px;
+  font-family: helvetica, sans-serif;
+  text-align: center;  
+}
+
+img.format_album_thumbnail {
+  margin-left:50px;
+  max-width:60%;
+  max-height:60%;
+  border-color:rgb(255, 255, 255);
+  border-width: 0 px;
+}
+
+.list_unstyled {
+  list-style-type: none;
+}
+
+.format_album_image_row {
+  flex: 0 0 auto;
+  width: 30%;
+}
+
+.format_release_date_row {
+  flex: 0 0 auto;
+  width:20%;
+  padding-left: 60px;
+}
+
+.format_trackslist_row {
+  flex: 0 0 auto;
+  width: 40%;
+}
+
+.format_lyrics_row {
+  flex: 0 0 auto;
+  width: 10%;
+}
+
+/*SHOWS TABLE formatting*/
+.shows_info {
+  color: #f2f2f2;
+  font-size: 18px;
+  font-family: helvetica, sans-serif;
+  justify-content: left;  
+  width: auto;
+}
+
+img.format_shows_thumbnail {
+  margin-left:50px;
+  max-width:60%;
+  max-height:60%;
+  border-color:rgb(255, 255, 255);
+  border-width: 0 px;
+}
+
+.format_show_date_col {
+  flex: 0 0 auto;
+  width:30%;
+}
+
+.format_show_details_col {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.past_show_date {
+  color: #f2f2f2;
+  font-size: 18px;
+  font-family: helvetica, sans-serif;
+  text-decoration: line-through;
+  justify-content: left;  
+  width: auto;
+}
+
+.songlyrics {
+  color: #f2f2f2;
+  font-size: 14px;
+  font-family: helvetica, sans-serif;
+}
+
+.transcripts {
+  color: #f2f2f2;
+  font-size: 12 px;
+  font-family: helvetica, sans-serif;
+}
