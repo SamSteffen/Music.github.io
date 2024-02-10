@@ -1,0 +1,11 @@
+# https://opensource.com/article/21/11/jekyll-config-files
+# Site Settings
+url: "https://samsteffen.github.io/Music.github.io/"
+website_url: "https://samsteffen.github.io/Music.github.io/"
+title: Sam Steffen Music
+email: atticus.steffen@gmail.com
+
+# images-path: /static/images/
+# videos-path: /static/videos/
+# js-path: /static/js/
+# baseurl: "" # the subpath of your site, e.g. /blog
