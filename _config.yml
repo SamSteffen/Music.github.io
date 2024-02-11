@@ -9,11 +9,10 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-
 # https://opensource.com/article/21/11/jekyll-config-files
 # Site Settings
-url: "https://samsteffen.github.io/Music.github.io/"
-website_url: "https://samsteffen.github.io/Music.github.io/"
+url: "https://samsteffen.github.io/Music/"
+website_url: "https://samsteffen.github.io/Music/"
 title: Sam Steffen Music
 email: atticus.steffen@gmail.com
 
