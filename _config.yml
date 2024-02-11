@@ -11,11 +11,11 @@
 
 # https://opensource.com/article/21/11/jekyll-config-files
 # Site Settings
-source: "https://samsteffen.github.io/Music/"
-url: "https://samsteffen.github.io/Music/"
-website_url: "https://samsteffen.github.io/Music/"
-title: Sam Steffen Music
-email: atticus.steffen@gmail.com
+# source: "https://samsteffen.github.io/Music/"
+# url: "https://samsteffen.github.io/Music/"
+# website_url: "https://samsteffen.github.io/Music/"
+# title: Sam Steffen Music
+# email: atticus.steffen@gmail.com
 
 # images-path: /static/images/
 # videos-path: /static/videos/
