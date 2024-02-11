@@ -1,3 +1,15 @@
+lsi: false
+safe: true
+source: [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+
 # https://opensource.com/article/21/11/jekyll-config-files
 # Site Settings
 url: "https://samsteffen.github.io/Music.github.io/"
