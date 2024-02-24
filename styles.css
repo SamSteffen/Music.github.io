@@ -34,6 +34,7 @@
 .topnav {
   background-color: #333;
   overflow: hidden;
+  display: flex;
 }
 
 /* Style the links inside the navigation bar */
@@ -67,24 +68,25 @@
   display: list-item;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+@media screen and (max-width: 100%) {
+  .topnav a:not(:first-child) {display: block;}
   .topnav a.icon {
+    position: relative;
     float: right;
     display: block;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 100%) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
-    position: absolute;
+    position: relative;
     right: 0;
     top: 0;
   }
   .topnav.responsive a {
     float: none;
-    display: block;
+    display: inline-block;
     text-align: left;
   }
 }
@@ -92,14 +94,15 @@
 /*to define the banner image container*/
 .image-container {
   position: relative;
-  display: inline-block;
+  display: block;
   overflow: hidden;
 }
 
 /*to define the banner image container image*/
 .image-container img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  /* width: 100%; */
   height: auto;
   /* margin-left: -300px;
   margin-top: -700px;
@@ -177,8 +180,8 @@
 }
 
 .image-icon {
-  height: 40px;
-  width: fit-content;
+  height: 30px;
+  width: 30px;
 }
 
 /*ICONS TABLE formatting*/
@@ -186,9 +189,10 @@
   color: #f2f2f2;
   font-size: 18px;
   font-family: helvetica, sans-serif;
-  margin-left: 70%;
-  margin-right: auto;
+  /* margin-left: 50%;
+  margin-right: auto; */
   justify-content: center;
+  position: relative;
 }
 
 /*ALBUM TABLE formatting*/
