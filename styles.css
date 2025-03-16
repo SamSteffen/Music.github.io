@@ -350,11 +350,11 @@ nav .icon-burger .line {
 
 /* image gallery CSS */
 div.gallery {
-  border: 3px solid #ccc;
+  border: none;
 }
-div.gallery:hover {
+/* div.gallery:hover {
   border: 1px solid #777;
-}
+} */
 div.gallery img {
   width: 100%;
   height: auto;
@@ -363,7 +363,7 @@ div.gallery img {
 div.desc {
   padding: 15px;
   color: #f2f2f2;
-  font-size: 18px;
+  font-size: 16px;
   font-family: helvetica, sans-serif;
   /* text-align: center; */
   justify-content: left;  
@@ -375,7 +375,7 @@ div.desc {
 }
 
 .responsive {
-  padding: 0 6px;
+  padding: 6px 6px;
   float: left;
   width: 24.99999%;
 }
