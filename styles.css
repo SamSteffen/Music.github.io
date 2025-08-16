@@ -279,6 +279,10 @@ nav .icon-burger .line {
   width: 30px;
 }
 
+.image-icon-2 {
+  height: 60px;
+  width: 60px;
+}
 /*ICONS TABLE formatting*/
 .icons_table {
   color: #f2f2f2;
@@ -314,6 +318,16 @@ div.gallery img {
 div.desc {
   padding: 15px;
   color: #f2f2f2;
+  font-size: 16px;
+  font-family: helvetica, sans-serif;
+  /* text-align: center; */
+  justify-content: left;  
+  width: auto;
+}
+
+div.epk-desc {
+  padding: 15px;
+  color: #000;
   font-size: 16px;
   font-family: helvetica, sans-serif;
   /* text-align: center; */
