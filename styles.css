@@ -44,6 +44,13 @@ body {
   position: relative;
   margin-top: 100px;
 }
+.epk-container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+
 /* .container img {
   display: block;
   width: 100%;
